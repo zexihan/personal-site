@@ -1,20 +1,27 @@
 import React, { PropTypes } from 'react';
 
-import Header from './components/Header';
-import Nav from './components/Nav';
+import Header from './components/Template/Header';
+import Nav from './components/Template/Nav';
 
 const App = ({ children }) => (
   <div id="wrapper">
-    <Header/>
+    <Header />
     <div id="main">
       {children}
     </div>
-    <Nav/>
+    <Nav />
   </div>
 );
 
 App.propTypes = {
-  children: PropTypes.object
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
+};
+
+App.defaultProps = {
+  children: null,
 };
 
 export default App;

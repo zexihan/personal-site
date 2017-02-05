@@ -1,21 +1,29 @@
-import React, { Component, PropTypes } from 'react';
+import React, { PropTypes } from 'react';
+import moment from 'moment';
 
-class Cell extends Component {
-  render() {
-    return (
-      <article className="mini-post">
-        <header>
-          <h3><a href={this.props.data.link}>{this.props.data.title}</a></h3>
-          <time className="published" dateTime={this.props.data.datetime}>{this.props.data.date}</time>
-        </header>
-        <a href={this.props.data.link} className="image"><img src={this.props.data.image} alt=""/></a>
-      </article>
-    );
-  }
-}
+const Cell = props => (
+  <div className="cell-container">
+    <article className="mini-post">
+      <header>
+        <h3><a href={props.data.link}>{props.data.title}</a></h3>
+        <time className="published">{moment(props.data.date).format('MMMM, YYYY')}</time>
+      </header>
+      <a href={props.data.link} className="image"><img src={props.data.image} alt="" /></a>
+      <div className="description">
+        <p>{props.data.desc}</p>
+      </div>
+    </article>
+  </div>
+);
 
 Cell.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    desc: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Cell;
