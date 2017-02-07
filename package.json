@@ -10,7 +10,7 @@
     "forever-stop": "forever stop server.js",
     "dev": "nodemon server.js --ignore app/ --exec babel-node",
     "lint": "./node_modules/.bin/eslint app routes server.js webpack || true",
-    "sass-lint": "node ./node_modules/sass-lint/bin/sass-lint.js --config .sass-lint.yml './public/**/*.scss' --verbose --no-exit",
+    "sass-lint": "node ./node_modules/sass-lint/bin/sass-lint.js --config .sass-lint.yml './public/**/*.scss' --verbose --no-exit || true",
     "start": "./node_modules/.bin/babel-node server",
     "deploy": "yarn && npm run build && npm run forever-stop || true && npm run forever-start"
   },

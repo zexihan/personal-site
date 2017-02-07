@@ -6,167 +6,165 @@
 
 /* Type */
 
-	body, input, select, textarea {
-		color: _palette(fg);
-		font-family: _font(family);
-		font-size: 14pt;
-		font-weight: _font(weight);
-		line-height: 1.75;
+body,
+input,
+select,
+textarea {
+  color: _palette(fg);
+  font-family: _font(family);
+  font-size: 14pt;
+  font-weight: _font(weight);
+  line-height: 1.75;
+  @include breakpoint(xlarge) {
+    font-size: 12pt;
+  }
+  @include breakpoint(large) {
+    font-size: 12pt;
+  }
+  @include breakpoint(medium) {
+    font-size: 12pt;
+  }
+  @include breakpoint(small) {
+    font-size: 12pt;
+  }
+  @include breakpoint(xsmall) {
+    font-size: 12pt;
+  }
+}
 
-		@include breakpoint(xlarge) {
-			font-size: 12pt;
-		}
+a {
+  @include vendor('transition', (
+      'color #{_duration(transition)} ease',
+      'border-bottom-color #{_duration(transition)} ease'
+  ));
+  border-bottom: dotted 1px _palette(border-alt);
+  color: inherit;
+  text-decoration: none;
 
-		@include breakpoint(large) {
-			font-size: 12pt;
-		}
+  &:before {
+    @include vendor('transition', (
+        'color #{_duration(transition)} ease'
+    ));
+  }
 
-		@include breakpoint(medium) {
-			font-size: 12pt;
-		}
+  &:hover {
+    border-bottom-color: transparent;
+    color: _palette(accent) !important;
 
-		@include breakpoint(small) {
-			font-size: 12pt;
-		}
+    &:before {
+      color: _palette(accent) !important;
+    }
+  }
+}
 
-		@include breakpoint(xsmall) {
-			font-size: 12pt;
-		}
-	}
+strong, b {
+  color: _palette(fg-bold);
+  font-weight: _font(weight-bold);
+}
 
-	a {
-		@include vendor('transition', (
-			'color #{_duration(transition)} ease',
-			'border-bottom-color #{_duration(transition)} ease'
-		));
-		border-bottom: dotted 1px _palette(border-alt);
-		color: inherit;
-		text-decoration: none;
+em, i {
+  font-style: italic;
+}
 
-		&:before {
-			@include vendor('transition', (
-				'color #{_duration(transition)} ease'
-			));
-		}
+p {
+  margin: 0 0 _size(element-margin) 0;
+}
 
-		&:hover {
-			border-bottom-color: transparent;
-			color: _palette(accent) !important;
+h1, h2, h3, h4, h5, h6 {
+  color: _palette(fg-bold);
+  font-family: _font(family-heading);
+  font-weight: _font(weight-heading-bold);
+  letter-spacing: _font(kerning-heading);
+  line-height: 1.65;
+  margin: 0 0 (_size(element-margin) * .5) 0;
+  text-transform: uppercase;
 
-			&:before {
-				color: _palette(accent) !important;
-			}
-		}
-	}
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
 
-	strong, b {
-		color: _palette(fg-bold);
-		font-weight: _font(weight-bold);
-	}
+h2 {
+  font-size: 1.1em;
+}
 
-	em, i {
-		font-style: italic;
-	}
+h3 {
+  font-size: .9em;
+}
 
-	p {
-		margin: 0 0 _size(element-margin) 0;
-	}
+h4 {
+  font-size: .7em;
+}
 
-	h1, h2, h3, h4, h5, h6 {
-		color: _palette(fg-bold);
-		font-family: _font(family-heading);
-		font-weight: _font(weight-heading-bold);
-		letter-spacing: _font(kerning-heading);
-		line-height: 1.65;
-		margin: 0 0 (_size(element-margin) * 0.5) 0;
-		text-transform: uppercase;
+h5 {
+  font-size: .7em;
+}
 
-		a {
-			color: inherit;
-			border-bottom: 0;
-		}
-	}
+h6 {
+  font-size: .7em;
+}
 
-	h2 {
-		font-size: 1.1em;
-	}
+sub {
+  font-size: .8em;
+  position: relative;
+  top: .5em;
+}
 
-	h3 {
-		font-size: 0.9em;
-	}
+sup {
+  font-size: .8em;
+  position: relative;
+  top: -.5em;
+}
 
-	h4 {
-		font-size: 0.7em;
-	}
+blockquote {
+  border-left: solid 4px _palette(border);
+  font-style: italic;
+  margin: 0 0 _size(element-margin) 0;
+  padding: (_size(element-margin) / 4) 0 (_size(element-margin) / 4) _size(element-margin);
+}
 
-	h5 {
-		font-size: 0.7em;
-	}
+code {
+  background: _palette(border-bg);
+  border: solid 1px _palette(border);
+  font-family: _font(family-fixed);
+  font-size: .9em;
+  margin: 0 .25em;
+  padding: .25em .65em;
+}
 
-	h6 {
-		font-size: 0.7em;
-	}
+pre {
+  -webkit-overflow-scrolling: touch;
+  font-family: _font(family-fixed);
+  font-size: .9em;
+  margin: 0 0 _size(element-margin) 0;
 
-	sub {
-		font-size: 0.8em;
-		position: relative;
-		top: 0.5em;
-	}
+  code {
+    display: block;
+    line-height: 1.75em;
+    padding: 1em 1.5em;
+    overflow-x: auto;
+  }
+}
 
-	sup {
-		font-size: 0.8em;
-		position: relative;
-		top: -0.5em;
-	}
+hr {
+  border: 0;
+  border-bottom: solid 1px _palette(border);
+  margin: _size(element-margin) 0;
 
-	blockquote {
-		border-left: solid 4px _palette(border);
-		font-style: italic;
-		margin: 0 0 _size(element-margin) 0;
-		padding: (_size(element-margin) / 4) 0 (_size(element-margin) / 4) _size(element-margin);
-	}
+  &.major {
+    margin: (_size(element-margin) * 1.5) 0;
+  }
+}
 
-	code {
-		background: _palette(border-bg);
-		border: solid 1px _palette(border);
-		font-family: _font(family-fixed);
-		font-size: 0.9em;
-		margin: 0 0.25em;
-		padding: 0.25em 0.65em;
-	}
+.align-left {
+  text-align: left;
+}
 
-	pre {
-		-webkit-overflow-scrolling: touch;
-		font-family: _font(family-fixed);
-		font-size: 0.9em;
-		margin: 0 0 _size(element-margin) 0;
+.align-center {
+  text-align: center;
+}
 
-		code {
-			display: block;
-			line-height: 1.75em;
-			padding: 1em 1.5em;
-			overflow-x: auto;
-		}
-	}
-
-	hr {
-		border: 0;
-		border-bottom: solid 1px _palette(border);
-		margin: _size(element-margin) 0;
-
-		&.major {
-			margin: (_size(element-margin) * 1.5) 0;
-		}
-	}
-
-	.align-left {
-		text-align: left;
-	}
-
-	.align-center {
-		text-align: center;
-	}
-
-	.align-right {
-		text-align: right;
-	}
+.align-right {
+  text-align: right;
+}

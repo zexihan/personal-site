@@ -6,273 +6,271 @@
 
 /* List */
 
-	ol {
-		list-style: decimal;
-		margin: 0 0 _size(element-margin) 0;
-		padding-left: 1.25em;
+ol {
+  list-style: decimal;
+  margin: 0 0 _size(element-margin);
+  padding-left: 1.25em;
 
-		li {
-			padding-left: 0.25em;
-		}
-	}
+  li {
+    padding-left: .25em;
+  }
+}
 
-	ul {
-		list-style: disc;
-		margin: 0 0 _size(element-margin) 0;
-		padding-left: 1em;
+ul {
+  list-style: disc;
+  margin: 0 0 _size(element-margin);
+  padding-left: 1em;
 
-		li {
-			padding-left: 0.5em;
-		}
+  li {
+    padding-left: .5em;
+  }
 
-		&.alt {
-			list-style: none;
-			padding-left: 0;
+  &.alt {
+    list-style: none;
+    padding-left: 0;
 
-			li {
-				border-top: solid 1px _palette(border);
-				padding: 0.5em 0;
+    li {
+      border-top: solid 1px _palette(border);
+      padding: .5em 0;
 
-				&:first-child {
-					border-top: 0;
-					padding-top: 0;
-				}
-			}
-		}
+      &:first-child {
+        border-top: 0;
+        padding-top: 0;
+      }
+    }
+  }
 
-		&.icons {
-			cursor: default;
-			list-style: none;
-			padding-left: 0;
+  &.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
 
-			li {
-				display: inline-block;
-				padding: 0 1em 0 0;
+    li {
+      display: inline-block;
+      padding: 0 1em 0 0;
 
-				&:last-child {
-					padding-right: 0;
-				}
+      &:last-child {
+        padding-right: 0;
+      }
 
-				> * {
-					@include icon;
-					border: 0;
+      > * {
+        @include icon;
+        border: 0;
 
-					.label {
-						display: none;
-					}
-				}
-			}
-		}
+        .label {
+          display: none;
+        }
+      }
+    }
+  }
 
-		&.actions {
-			cursor: default;
-			list-style: none;
-			padding-left: 0;
+  &.actions {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
 
-			li {
-				display: inline-block;
-				padding: 0 (_size(element-margin) * 0.75) 0 0;
-				vertical-align: middle;
+    li {
+      display: inline-block;
+      padding: 0 (_size(element-margin) * .75) 0 0;
+      vertical-align: middle;
 
-				&:last-child {
-					padding-right: 0;
-				}
-			}
+      &:last-child {
+        padding-right: 0;
+      }
+    }
 
-			&.pagination {
-				.next {
-					@include icon('', after);
+    &.pagination {
+      .next {
+        @include icon('', after);
 
-					&:after {
-						content: '\f054';
-					}
-				}
+        &:after {
+          content: '\f054';
+        }
+      }
 
-				.previous {
-					@include icon('', before);
+      .previous {
+        @include icon('', before);
 
-					&:before {
-						content: '\f053';
-					}
-				}
+        &:before {
+          content: '\f053';
+        }
+      }
+      @include breakpoint(large) {
+        text-align: center;
 
-				@include breakpoint(large) {
-					text-align: center;
+        .next,
+        .previous {
+          min-width: 20em;
+        }
+      }
+      @include breakpoint(small) {
+        .next,
+        .previous {
+          min-width: 18em;
+        }
+      }
+    }
 
-					.next, .previous {
-						min-width: 20em;
-					}
-				}
+    &.small {
+      li {
+        padding: 0 (_size(element-margin) * .5) 0 0;
+      }
+    }
 
-				@include breakpoint(small) {
-					.next, .previous {
-						min-width: 18em;
-					}
-				}
-			}
+    &.vertical {
+      li {
+        display: block;
+        padding: (_size(element-margin) * .75) 0 0 0;
 
-			&.small {
-				li {
-					padding: 0 (_size(element-margin) * 0.5) 0 0;
-				}
-			}
+        &:first-child {
+          padding-top: 0;
+        }
 
-			&.vertical {
-				li {
-					display: block;
-					padding: (_size(element-margin) * 0.75) 0 0 0;
+        > * {
+          margin-bottom: 0;
+        }
+      }
 
-					&:first-child {
-						padding-top: 0;
-					}
+      &.small {
+        li {
+          padding: (_size(element-margin) * .5) 0 0 0;
 
-					> * {
-						margin-bottom: 0;
-					}
-				}
+          &:first-child {
+            padding-top: 0;
+          }
+        }
+      }
+    }
 
-				&.small {
-					li {
-						padding: (_size(element-margin) * 0.5) 0 0 0;
+    &.fit {
+      display: table;
+      margin-left: (_size(element-margin) * -.5);
+      padding: 0;
+      table-layout: fixed;
+      width: calc(100% + #{(_size(element-margin) * .5)});
 
-						&:first-child {
-							padding-top: 0;
-						}
-					}
-				}
-			}
+      li {
+        display: table-cell;
+        padding: 0 0 0 (_size(element-margin) * .5);
 
-			&.fit {
-				display: table;
-				margin-left: (_size(element-margin) * -0.5);
-				padding: 0;
-				table-layout: fixed;
-				width: calc(100% + #{(_size(element-margin) * 0.5)});
+        > * {
+          margin-bottom: 0;
+        }
+      }
 
-				li {
-					display: table-cell;
-					padding: 0 0 0 (_size(element-margin) * 0.5);
+      &.small {
+        margin-left: (_size(element-margin) * -.25);
+        width: calc(100% + #{(_size(element-margin) * .25)});
 
-					> * {
-						margin-bottom: 0;
-					}
-				}
+        li {
+          padding: 0 0 0 (_size(element-margin) * .25);
+        }
+      }
+    }
+    @include breakpoint(xsmall) {
+      margin: 0 0 _size(element-margin);
 
-				&.small {
-					margin-left: (_size(element-margin) * -0.25);
-					width: calc(100% + #{(_size(element-margin) * 0.25)});
+      li {
+        padding: (_size(element-margin) * .5) 0 0 0;
+        display: block;
+        text-align: center;
+        width: 100%;
 
-					li {
-						padding: 0 0 0 (_size(element-margin) * 0.25);
-					}
-				}
-			}
+        &:first-child {
+          padding-top: 0;
+        }
 
-			@include breakpoint(xsmall) {
-				margin: 0 0 _size(element-margin) 0;
+        > * {
+          width: 100%;
+          margin: 0 !important;
 
-				li {
-					padding: (_size(element-margin) * 0.5) 0 0 0;
-					display: block;
-					text-align: center;
-					width: 100%;
+          &.icon {
+            &:before {}
+          }
+        }
+      }
 
-					&:first-child {
-						padding-top: 0;
-					}
+      &.small {
+        li {
+          padding: (_size(element-margin) * .25) 0 0 0;
 
-					> * {
-						width: 100%;
-						margin: 0 !important;
+          &:first-child {
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
 
-						&.icon {
-							&:before {
-							}
-						}
-					}
-				}
+  &.posts {
+    list-style: none;
+    padding: 0;
 
-				&.small {
-					li {
-						padding: (_size(element-margin) * 0.25) 0 0 0;
+    li {
+      border-top: dotted 1px _palette(border);
+      margin: (_size(element-margin) * .75) 0 0 0;
+      padding: (_size(element-margin) * .75) 0 0 0;
 
-						&:first-child {
-							padding-top: 0;
-						}
-					}
-				}
-			}
-		}
+      &:first-child {
+        border-top: 0;
+        margin-top: 0;
+        padding-top: 0;
+      }
+    }
 
-		&.posts {
-			list-style: none;
-			padding: 0;
+    article {
+      @include vendor('display', 'flex');
+      @include vendor('align-items', 'flex-start');
+      @include vendor('flex-direction', 'row-reverse');
 
-			li {
-				border-top: dotted 1px _palette(border);
-				margin: (_size(element-margin) * 0.75) 0 0 0;
-				padding: (_size(element-margin) * 0.75) 0 0 0;
+      .image {
+        display: block;
+        margin-right: 1.5em;
+        min-width: 4em;
+        width: 4em;
 
-				&:first-child {
-					border-top: 0;
-					margin-top: 0;
-					padding-top: 0;
-				}
-			}
+        img {
+          width: 100%;
+        }
+      }
 
-			article {
-				@include vendor('display', 'flex');
-				@include vendor('align-items', 'flex-start');
-				@include vendor('flex-direction', 'row-reverse');
+      header {
+        @include vendor('flex-grow', '1');
+        -ms-flex: 1;
 
-				.image {
-					display: block;
-					margin-right: 1.5em;
-					min-width: 4em;
-					width: 4em;
+        h3 {
+          font-size: .7em;
+          margin-top: .125em;
+        }
 
-					img {
-						width: 100%;
-					}
-				}
+        .published {
+          display: block;
+          font-family: _font(family-heading);
+          font-size: .6em;
+          font-weight: _font(weight-heading);
+          letter-spacing: _font(kerning-heading);
+          margin: -.625em 0 (_size(element-margin) * .85) 0;
+          text-transform: uppercase;
+        }
 
-				header {
-					@include vendor('flex-grow', '1');
-					-ms-flex: 1;
+        > :last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
 
-					h3 {
-						font-size: 0.7em;
-						margin-top: 0.125em;
-					}
+dl {
+  margin: 0 0 _size(element-margin);
 
-					.published {
-						display: block;
-						font-family: _font(family-heading);
-						font-size: 0.6em;
-						font-weight: _font(weight-heading);
-						letter-spacing: _font(kerning-heading);
-						margin: -0.625em 0 (_size(element-margin) * 0.85) 0;
-						text-transform: uppercase;
-					}
+  dt {
+    display: block;
+    font-weight: _font(weight-bold);
+    margin: 0 0 (_size(element-margin) * .5) 0;
+  }
 
-					> :last-child {
-						margin-bottom: 0;
-					}
-				}
-			}
-		}
-	}
-
-	dl {
-		margin: 0 0 _size(element-margin) 0;
-
-		dt {
-			display: block;
-			font-weight: _font(weight-bold);
-			margin: 0 0 (_size(element-margin) * 0.5) 0;
-		}
-
-		dd {
-			margin-left: _size(element-margin);
-		}
-	}
+  dd {
+    margin-left: _size(element-margin);
+  }
+}
