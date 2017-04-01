@@ -21,6 +21,8 @@ const routes = (app) => {
   app.get('/api/github', require('./api/github'));
   app.get('/api/lastfm', require('./api/lastfm'));
 
+  app.get('/api/gallery/:id', require('./api/gallery'));
+
   app.get('/api/resume', requireUserAPI, require('./api/resume'));
 
   app.get('/api/admin', requireAdminAPI, require('./api/admin'));
