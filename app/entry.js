@@ -40,7 +40,7 @@ ReactDOM.render(
       <Route path="/music" component={Music} />
       <Route path="/login" component={Login} />
 
-      <Route path="/photography/:id" component={Gallery}/>
+      <Route path="/gallery/:id" component={Gallery} />
 
       <PrivateRoute path="/resume" component={Resume} />
       <AdminRoute path="/admin" component={Admin} />

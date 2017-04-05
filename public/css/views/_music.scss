@@ -28,21 +28,21 @@
 #band-tile div {
   /* Just in case there are inline attributes */
   margin: .125em .25em;
-  
+
   img {
     width: 10em !important;
     height: auto !important;
   }
-  
+
   a {
     border: none;
   }
-  
+
   h4 {
     text-align: center;
     font-size: .6em;
   }
-  
+
 }
 
 @media (max-width: 1200px) {

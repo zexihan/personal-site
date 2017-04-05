@@ -39,8 +39,8 @@ class Music extends Component {
     const name = this.props.match.params.id;
     return (
       <Main fullPage>
-        <Helmet title="Music" />
-        <article className="post" id="music">
+        <Helmet title="Gallery" />
+        <article className="post" id="gallery">
           <header>
             <div className="title">
               <h2><Link to={`/photography/${name}`}>{this.state.heading}</Link></h2>
@@ -48,11 +48,11 @@ class Music extends Component {
             </div>
           </header>
           { this.state.success ?
-          <div>
-            <section id="band-tile">
-              { this.state.images.map(image => (
-                <div>
-                  <picture>
+            <div>
+              <section>
+                { this.state.images.map(image => (
+                  <div>
+                    {/* <picture>
                     <source
                       media="(min-width: 650px)"
                       srcset={`${image}, ${image} 1.5x, ${image} 2x`}
@@ -66,12 +66,17 @@ class Music extends Component {
                       srcset={`${image}, ${image} 1.5x, ${image} 2x`}
                       alt="a cute kitten"
                     />
-                  </picture>
-                </div>),
+                  </picture> */}
+                    <img
+                      src={image}
+                      srcSet={`${image}, ${image} 1.5x, ${image} 2x`}
+                      alt="a cute kitten"
+                    />
+                  </div>),
              )
             }
-            </section>
-          </div> : null }
+              </section>
+            </div> : null }
         </article>
       </Main>
     );
