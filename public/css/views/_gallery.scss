@@ -1,18 +1,20 @@
 // Gallery
 
 #gallery {
-  section{
-    display: flex;
+
+  section {
+    display: inline-flex;
     flex-wrap: wrap;
   }
-  div{
+
+  div {
     flex-grow: 1;
-    margin: 2px;
-    // background-color: violet;
-    height: 200px;
+    margin: .1em;
+    height: 15em;
   }
-  img{
-    height: 200px;
+
+  img {
+    height: 15em;
     object-fit: cover;
     max-width: 100%;
     min-width: 100%;

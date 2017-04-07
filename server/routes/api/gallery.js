@@ -3,8 +3,9 @@ import path from 'path';
 
 export default (req, res) => {
   const parent = path.join(__dirname, '../../../public/images/gallery');
-  const folders = fs.readdirSync(parent);
-  if (folders.includes(req.params.id)) {
+  const folders = fs.readdirSync(parent).map(folder => folder.toLowerCase());
+
+  if (req.params.id && folders.includes(req.params.id.toLowerCase())) {
     const folder = path.join(parent, req.params.id);
     const files = fs.readdirSync(folder)
       .filter(file => file.includes('.jpg') || file.includes('.png'))
