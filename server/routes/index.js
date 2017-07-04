@@ -4,16 +4,24 @@ import passport from 'passport';
 import reactApp from './views/app';
 import { requireUserAPI, requireAdminAPI } from './middleware';
 
+const redirect = (req, res) => {
+  const target = req.cookies.target || '/';
+  res.clearCookie('target', { path: '/' });
+  return res.redirect(target);
+};
+
 const routes = (app) => {
   app.get('/login/google', passport.authenticate('google'));
 
   app.get('/login/google/return', passport.authenticate('google', {
     failureRedirect: '/login',
-  }), (req, res) => {
-    const target = req.cookies.target || '/';
-    res.clearCookie('target', { path: '/' });
-    return res.redirect(target);
-  });
+  }), redirect);
+
+  app.get('/login/facebook', passport.authenticate('facebook', { scope: ['email'] }));
+
+  app.get('/login/facebook/return', passport.authenticate('facebook', {
+    failureRedirect: '/login',
+  }), redirect);
 
   app.get('/logout', require('./views/logout'));
 
