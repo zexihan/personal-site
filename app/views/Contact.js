@@ -1,3 +1,4 @@
+/* @flow */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Helmet from 'react-helmet';
@@ -34,8 +35,10 @@ const validateText = (text) => {
   return re.test(text) || text.length === 0;
 };
 
+export type Props = {};
+
 class Contact extends Component {
-  constructor(props) {
+  constructor(props: Props) {
     super(props);
     this.state = {
       char: 2,
@@ -44,6 +47,8 @@ class Contact extends Component {
       message: messages[0],
     };
   }
+
+  props: Props;
 
   componentDidMount() {
     this.timer = setInterval(() => this.tick(), 100);

@@ -1,3 +1,4 @@
+/* @flow */
 import React, { Component } from 'react';
 
 import axios from 'axios';
@@ -5,11 +6,15 @@ import axios from 'axios';
 import Table from './Table';
 import data from '../../data/github';
 
+export type Props = {};
+
 class Stats extends Component {
-  constructor(props) {
+  constructor(props: Props) {
     super(props);
     this.state = { data };
   }
+
+  props: Props;
 
   componentDidMount() {
     axios.get('/api/github').then((result) => {

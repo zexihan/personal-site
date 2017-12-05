@@ -1,7 +1,16 @@
+/* @flow */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+export type Props = {
+  label: string,
+  handleClick: Function,
+  active: Object<boolean>,
+};
+
 class CategoryButton extends Component {
+  props: Props;
+
   handleClick = () => {
     this.props.handleClick(this.props.label);
   }
@@ -18,11 +27,5 @@ class CategoryButton extends Component {
     );
   }
 }
-
-CategoryButton.propTypes = {
-  label: PropTypes.string.isRequired,
-  handleClick: PropTypes.func.isRequired,
-  active: PropTypes.objectOf(PropTypes.bool.isRequired).isRequired,
-};
 
 export default CategoryButton;

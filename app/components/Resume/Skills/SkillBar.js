@@ -1,7 +1,24 @@
+/* @flow */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class SkillBar extends Component {
+  static defaultProps = {
+    categories: [],
+  }
+
+  static propTypes = {
+    data: PropTypes.shape({
+      category: PropTypes.arrayOf(PropTypes.string).isRequired,
+      compentency: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+    }).isRequired,
+    categories: PropTypes.arrayOf(PropTypes.shape({
+      name: PropTypes.string,
+      color: PropTypes.string,
+    })),
+  }
+
   constructor(props) {
     super(props);
     this.state = {
@@ -34,21 +51,5 @@ class SkillBar extends Component {
     );
   }
 }
-
-SkillBar.propTypes = {
-  data: PropTypes.shape({
-    category: PropTypes.arrayOf(PropTypes.string).isRequired,
-    compentency: PropTypes.number.isRequired,
-    title: PropTypes.string.isRequired,
-  }).isRequired,
-  categories: PropTypes.arrayOf(PropTypes.shape({
-    name: PropTypes.string,
-    color: PropTypes.string,
-  })),
-};
-
-SkillBar.defaultProps = {
-  categories: [],
-};
 
 export default SkillBar;

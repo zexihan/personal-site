@@ -1,3 +1,4 @@
+/* @flow */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
@@ -23,13 +24,18 @@ const sections = [
 ];
 
 
+export type Props = {};
+
+
 class Resume extends Component {
-  constructor(props) {
+  constructor(props: Props) {
     super(props);
     this.state = {
       data: {},
     };
   }
+
+  props: Props;
 
   componentWillMount() {
     axios.get('/api/resume').then(({ data }) => {

@@ -1,13 +1,18 @@
+/* @flow */
 import React, { Component } from 'react';
 
 import Table from './Table';
 import data from '../../data/stats';
 
+export type Props = {};
+
 class PersonalStats extends Component {
-  constructor(props) {
+  constructor(props: Props) {
     super(props);
     this.state = { data };
   }
+
+  props: Props;
 
   componentDidMount() {
     this.timer = setInterval(() => this.tick(), 100);

@@ -1,9 +1,18 @@
+/* @flow */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import TableRow from './TableRow';
 
+export type Props = { data: Array<{
+  label: string,
+  value: string | number,
+  link?: string,
+}> };
+
 class Table extends Component {
+  props: Props;
+
   getRows() {
     return this.props.data.map(pair => (
       <TableRow
@@ -25,16 +34,5 @@ class Table extends Component {
     );
   }
 }
-
-Table.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.shape({
-    label: PropTypes.string.isRequired,
-    value: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.number,
-    ]).isRequired,
-    link: PropTypes.string,
-  })).isRequired,
-};
 
 export default Table;

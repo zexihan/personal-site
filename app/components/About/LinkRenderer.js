@@ -1,8 +1,14 @@
+/* @flow */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-const LinkRenderer = (props) => {
+export type Props = {
+  children: number | string | React.Element | Array<any>,
+  href: string,
+};
+
+const LinkRenderer = (props: Props) => {
   if (props.href.match(/^(https?:)?\/\//)) {
     return (
       <a href={props.href}>
@@ -13,11 +19,6 @@ const LinkRenderer = (props) => {
   return (
     <Link to={props.href}>{props.children}</Link>
   );
-};
-
-LinkRenderer.propTypes = {
-  children: PropTypes.node.isRequired,
-  href: PropTypes.string.isRequired,
 };
 
 export default LinkRenderer;

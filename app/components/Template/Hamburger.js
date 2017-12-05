@@ -1,3 +1,4 @@
+/* @flow */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -7,13 +8,17 @@ import routes from '../../data/routes';
 
 const Menu = Menus.slide;
 
+export type Props = {};
+
 class Hamburger extends Component {
-  constructor(props) {
+  constructor(props: Props) {
     super(props);
     this.state = {
       open: false,
     };
   }
+
+  props: Props;
 
   getButton() {
     return this.state.open ? (

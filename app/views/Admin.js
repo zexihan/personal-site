@@ -1,3 +1,4 @@
+/* @flow */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Helmet from 'react-helmet';
@@ -7,13 +8,18 @@ import axios from 'axios';
 import Main from '../layouts/Main';
 
 
+export type Props = {};
+
+
 class Admin extends Component {
-  constructor(props) {
+  constructor(props: Props) {
     super(props);
     this.state = {
       data: [],
     };
   }
+
+  props: Props;
 
   componentDidMount() {
     axios.get('/api/admin').then((payload) => {

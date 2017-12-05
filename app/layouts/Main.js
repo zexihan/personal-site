@@ -1,3 +1,4 @@
+/* @flow */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
@@ -12,6 +13,18 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 class Main extends Component {
+  static defaultProps = {
+    children: null,
+    fullPage: false,
+  }
+
+  static propTypes = {
+    children: PropTypes.oneOfType([
+      PropTypes.arrayOf(PropTypes.node),
+      PropTypes.node,
+    ]),
+    fullPage: PropTypes.bool,
+  }
   componentWillMount() {
     window.scrollTo(0, 0);
   }
@@ -38,18 +51,5 @@ class Main extends Component {
       </div>);
   }
 }
-
-Main.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]),
-  fullPage: PropTypes.bool,
-};
-
-Main.defaultProps = {
-  children: null,
-  fullPage: false,
-};
 
 export default Main;

@@ -1,3 +1,4 @@
+/* @flow */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
@@ -5,6 +6,23 @@ import CategoryButton from './Skills/CategoryButton';
 import SkillBar from './Skills/SkillBar';
 
 class Skills extends Component {
+  static defaultProps = {
+    skills: [],
+    categories: [],
+  }
+
+  static propTypes = {
+    skills: PropTypes.arrayOf(PropTypes.shape({
+      title: PropTypes.string,
+      compentency: PropTypes.number,
+      category: PropTypes.arrayOf(PropTypes.string),
+    })),
+    categories: PropTypes.arrayOf(PropTypes.shape({
+      name: PropTypes.string,
+      color: PropTypes.string,
+    })),
+  }
+
   constructor(props) {
     super(props);
     this.state = {
@@ -95,23 +113,5 @@ class Skills extends Component {
     );
   }
 }
-
-Skills.propTypes = {
-  skills: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string,
-    compentency: PropTypes.number,
-    category: PropTypes.arrayOf(PropTypes.string),
-  })),
-  categories: PropTypes.arrayOf(PropTypes.shape({
-    name: PropTypes.string,
-    color: PropTypes.string,
-  })),
-};
-
-Skills.defaultProps = {
-  skills: [],
-  categories: [],
-};
-
 
 export default Skills;

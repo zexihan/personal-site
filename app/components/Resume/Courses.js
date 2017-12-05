@@ -1,3 +1,4 @@
+/* @flow */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -18,7 +19,15 @@ const getRows = courses => courses.sort((a, b) => {
   />
 ));
 
-const Courses = props => (
+type Props = { data?: Array<{
+  title?: string,
+  number?: string,
+  link?: string,
+  univerity?: string,
+}> };
+
+function Courses(props: Props) {
+  return (
   <div className="courses">
     <div className="link-to" id="courses" />
     <div className="title">
@@ -29,15 +38,7 @@ const Courses = props => (
     </ul>
   </div>
 );
-
-Courses.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string,
-    number: PropTypes.string,
-    link: PropTypes.string,
-    univerity: PropTypes.string,
-  })),
-};
+}
 
 Courses.defaultProps = {
   data: [],
