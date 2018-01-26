@@ -39,6 +39,10 @@ for installation and setup instructions. A cronjob such as:
 
   should be set to automatically renew the certificate in production.
 
+### Running with Docker
+1. `docker-machine start default`
+2. `eval $(docker-machine env)`
+3. `docker-compose up`
 
 ###  Running:
 
