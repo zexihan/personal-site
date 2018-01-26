@@ -28,7 +28,8 @@ export default {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
     new Jarvis({
-      port: 8001 // optional: set a port
+      // TODO figure out why this doesn't work
+      // port: 8001 // optional: set a port
     })
   ],
   module: {
