@@ -3,6 +3,7 @@ import path from 'path';
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import ScriptExtHtmlWebpackPlugin from 'script-ext-html-webpack-plugin';
+import Jarvis from 'webpack-jarvis';
 
 export default {
   devtool: 'eval-source-map',
@@ -26,6 +27,9 @@ export default {
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
+    new Jarvis({
+      port: 8001 // optional: set a port
+    })
   ],
   module: {
     loaders: [
