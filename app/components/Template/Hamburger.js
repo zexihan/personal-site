@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import {
-  Link,
-} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Menus from 'react-burger-menu';
 
@@ -10,7 +8,6 @@ import routes from '../../data/routes';
 const Menu = Menus.slide;
 
 class Hamburger extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -18,6 +15,10 @@ class Hamburger extends Component {
     };
   }
 
+  /* TODO(Michael): this style hierarchy is required by burger menu.
+   * Find an alternative that does not require violations later.
+   */
+  /* eslint-disable jsx-a11y/click-events-have-key-events, jsx-a11y/anchor-is-valid */
   getButton() {
     return this.state.open ? (
       <li className="menu close-menu">
@@ -29,6 +30,7 @@ class Hamburger extends Component {
       </li>
     );
   }
+  /* eslint-enable jsx-a11y/click-events-have-key-events, jsx-a11y/anchor-is-valid */
 
   handleClick = () => {
     this.setState({
@@ -47,8 +49,8 @@ class Hamburger extends Component {
         <Menu right noOverlay isOpen={this.state.open}>
           <ul className="hamburger-ul">
             {routes.map(l => (
-              <li key={l.label} onClick={this.handleClick}>
-                <Link to={l.path}>
+              <li key={l.label}>
+                <Link to={l.path} onClick={this.handleClick}>
                   <h3 className={l.index ? 'index-li' : null}>{l.label}</h3>
                 </Link>
               </li>

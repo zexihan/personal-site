@@ -1,9 +1,9 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import TableRow from './TableRow';
 
 class Table extends Component {
-
   getRows() {
     return this.props.data.map(pair => (
       <TableRow
@@ -12,7 +12,7 @@ class Table extends Component {
         value={pair.value}
         link={pair.link}
       />
-      ));
+    ));
   }
 
   render() {

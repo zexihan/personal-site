@@ -25,6 +25,12 @@ export default {
       defaultAttribute: 'defer',
     }),
     new ExtractTextPlugin('[name]-[hash].min.css'),
+    new StatsPlugin('webpack.stats.json', {
+      source: false,
+      modules: false,
+    }),
+    new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /en/),
+    new webpack.optimize.ModuleConcatenationPlugin(),
     new webpack.optimize.UglifyJsPlugin({
       beautify: false,
       comments: false,
@@ -38,11 +44,6 @@ export default {
         keep_fnames: true,
       },
     }),
-    new StatsPlugin('webpack.stats.json', {
-      source: false,
-      modules: false,
-    }),
-    new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /en/),
   ],
   module: {
     loaders: [
@@ -69,7 +70,11 @@ export default {
         loaders: 'style-loader!css-loader!sass-loader?modules&localIdentName=[name]---[local]---[hash:base64:5]',
       }, {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'url-loader?limit=10000&minetype=application/font-woff',
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          mimetype: 'application/font-woff',
+        },
       }, {
         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'file-loader',

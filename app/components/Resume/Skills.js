@@ -1,10 +1,10 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import CategoryButton from './Skills/CategoryButton';
 import SkillBar from './Skills/SkillBar';
 
 class Skills extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -13,8 +13,7 @@ class Skills extends Component {
         [key]: false,
       }), { All: true }),
       skills: props.skills.map(skill =>
-        Object.assign(skill, { category: skill.category.sort() }),
-      ),
+        Object.assign(skill, { category: skill.category.sort() })),
     };
   }
 
@@ -25,8 +24,7 @@ class Skills extends Component {
         [key]: false,
       }), { All: true }),
       skills: nextProps.skills.map(skill =>
-        Object.assign(skill, { category: skill.category.sort() }),
-      ),
+        Object.assign(skill, { category: skill.category.sort() })),
     });
   }
 
@@ -52,7 +50,7 @@ class Skills extends Component {
           data={skill}
           key={skill.title}
         />
-        ));
+      ));
   }
 
   getButtons() {

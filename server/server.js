@@ -16,6 +16,8 @@ import mongoStore from 'connect-mongodb-session';
 import routes from './routes';
 import auth from './auth';
 
+import update from './update'; // default database models
+
 const port = process.env.PORT || 7999;
 const env = process.env.NODE_ENV || 'development';
 const database = process.env.DB_NAME || 'mldangelo';
@@ -29,7 +31,12 @@ app.use(cookieParser());
 
 const MongoDBStore = mongoStore(session);
 
-mongoose.connect(`mongodb://localhost/${database}`);
+mongoose.connection.openUri(`mongodb://localhost/${database}`)
+  .once('open', () => {
+    console.info(`Connected to mongodb://localhost/${database}`);
+    update(); // create default models if they don't exist
+  })
+  .on('error', error => console.error('Database connection error:', error));
 
 const store = new MongoDBStore({
   uri: `mongodb://localhost/${database}`,
