@@ -21,6 +21,10 @@ const data = [
     label: 'Stats',
   },
   {
+    path: '/photography',
+    label: 'Photography',
+  },
+  {
     path: '/contact',
     label: 'Contact',
   },

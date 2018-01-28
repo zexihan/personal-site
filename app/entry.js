@@ -19,7 +19,7 @@ import Contact from './views/Contact';
 
 // Hidden
 import Music from './views/Music';
-import Gallery from './views/Gallery';
+import Photography from './views/Photography';
 
 import Login from './views/Login';
 import Admin from './views/Admin';
@@ -44,7 +44,8 @@ ReactDOM.render(
       <Route path="/music" component={Music} />
       <Route path="/login" component={Login} />
 
-      <Route path="/gallery/:id" component={Gallery} />
+      <Route path="/photography" component={Photography} />
+      <Route path="/gallery/:id" component={Photography} />
 
       <PrivateRoute path="/resume" component={Resume} />
       <AdminRoute path="/admin" component={Admin} />
