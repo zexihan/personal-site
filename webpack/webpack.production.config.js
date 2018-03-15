@@ -21,6 +21,14 @@ export default {
       template: 'server/views/index.tpl.html',
       inject: 'body',
       filename: 'index.html',
+      minify: {
+        removeAttributeQuotes: true,
+        collapseWhitespace: true,
+        html5: true,
+        minifyCSS: true,
+        removeComments: true,
+        removeEmptyAttributes: true,
+      },
     }),
     new ScriptExtHtmlWebpackPlugin({
       defaultAttribute: 'defer',
