@@ -7,14 +7,13 @@ import Post from '../../../models/Post';
 // TODO Check published state. Return all if admin
 // TODO validate fields
 
- export default async (req, res) => {
-
-   const post = await Post.findOne({ _id: req.params.id });
-   if (post) {
-     await post.update(req.body);
-   }
-   return res.send({
-     success: post !== undefined,
-     post: post,
-   });
+export default async (req, res) => {
+  const post = await Post.findOne({ _id: req.params.id });
+  if (post) {
+    await post.update(req.body);
+  }
+  return res.send({
+    success: post !== undefined,
+    post,
+  });
 };

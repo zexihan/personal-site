@@ -6,10 +6,10 @@ import Post from '../../../models/Post';
 
 // TODO Check published state. Return unplublished if admin
 
- export default async (req, res) => {
-    const post = await Post.findOne({ _id: req.params.id });
-    return res.send({
-      success: post !== undefined,
-      post: post,
-    })
+export default async (req, res) => {
+  const post = await Post.findOne({ _id: req.params.id });
+  return res.send({
+    success: post !== undefined,
+    post,
+  });
 };

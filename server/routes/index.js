@@ -1,4 +1,4 @@
- /* eslint-disable global-require */
+/* eslint-disable global-require */
 import 'dotenv/config';
 import passport from 'passport';
 import reactApp from './views/app';
@@ -22,12 +22,11 @@ const routes = (app) => {
 
   // requireAdminAPI -- filter non-published
   app.get('/api/post', require('./api/post/list'));
-  
+
   app.post('/api/post', require('./api/post/create'));
   app.get('/api/post/:id', require('./api/post/read'));
   app.put('/api/post/:id', require('./api/post/update'));
   app.delete('/api/post/:id', require('./api/post/destroy'));
-
 
 
   app.post('/api/gallery/upload', require('./api/upload'));

@@ -6,7 +6,6 @@ import axios from 'axios';
 import Main from '../layouts/Main';
 
 class Music extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -72,8 +71,7 @@ class Music extends Component {
                       srcSet={`${image}, ${image} 1.5x, ${image} 2x`}
                       alt="a cute kitten"
                     />
-                  </div>),
-             )
+                  </div>))
             }
               </section>
             </div> : null }

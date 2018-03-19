@@ -6,10 +6,10 @@ import Post from '../../../models/Post';
 
 // TODO Validate fields
 
- export default async (req, res) => {
-    console.info(req.body);
-    await Post.create(req.body);
-    return res.send({
-      success: true,
-    })
+export default async (req, res) => {
+  console.info(req.body);
+  await Post.create(req.body);
+  return res.send({
+    success: true,
+  });
 };

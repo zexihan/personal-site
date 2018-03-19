@@ -5,7 +5,7 @@ import Post from '../../../models/Post';
 
 // TODO Check published state. Return all if admin
 
- export default async (req, res) => {
-    const posts = await Post.find();
-    return res.send(posts);
+export default async (req, res) => {
+  const posts = await Post.find();
+  return res.send(posts);
 };

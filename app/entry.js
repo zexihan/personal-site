@@ -20,6 +20,8 @@ import Contact from './views/Contact';
 // Hidden
 import Music from './views/Music';
 import Photography from './views/Photography';
+import AdminPhotography from './views/photography/Admin';
+import AdminPhotographyCreate from './views/photography/Create';
 
 import Login from './views/Login';
 import Admin from './views/Admin';
@@ -48,7 +50,9 @@ ReactDOM.render(
       <Route path="/gallery/:id" component={Photography} />
 
       <PrivateRoute path="/resume" component={Resume} />
-      <AdminRoute path="/admin" component={Admin} />
+      <AdminRoute exact path="/admin" component={Admin} />
+      <AdminRoute exact path="/admin/photography" component={AdminPhotography} />
+      <AdminRoute exact path="/admin/photography/create" component={AdminPhotographyCreate} />
 
       <Route component={NotFound} status={404} />
     </Switch>
