@@ -1,16 +1,20 @@
 # specify the node base image with your desired version node:<version>
 FROM node:latest
 
-RUN mkdir -p /opt/app
+ADD yarn.lock /yarn.lock
+ADD package.json /package.json
 
 # defaults to development, compose overrides this to development on build and run
 ARG NODE_ENV=development
 ENV NODE_ENV $NODE_ENV
 
-WORKDIR /opt
-COPY package.json yarn.lock ./
-RUN yarn
-ENV PATH /opt/node_modules/.bin:$PATH
+ENV NODE_PATH=/node_modules
+ENV PATH=$PATH:/node_modules/.bin
+ENV PORT=7999
 
-WORKDIR /opt/app
-COPY . /opt/app
+RUN yarn
+
+WORKDIR /app
+COPY . /app
+
+ENTRYPOINT ["bash"]
