@@ -15,6 +15,7 @@ import Contact from './views/Contact';
 
 // Hidden
 import Music from './views/Music';
+import Test from './views/Test';
 
 import Login from './views/Login';
 import Admin from './views/Admin';
@@ -37,6 +38,7 @@ ReactDOM.render(
       <Route path="/stats" component={Stats} />
       <Route path="/contact" component={Contact} />
       <Route path="/music" component={Music} />
+      <Route path="/test" component={Test} />
       <Route path="/login" component={Login} />
 
       <PrivateRoute path="/resume" component={Resume} />
