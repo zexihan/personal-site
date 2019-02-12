@@ -27,7 +27,7 @@ import Login from './views/Login';
 import NotFound from './views/NotFound';
 
 // All of our CSS
-// import './static/css/main.scss';
+import './static/css/main.scss';
 
 if (window.location.href.endsWith('#')) { // For Google Oauth
   window.history.replaceState({}, '', window.location.href.slice(0, -1));
