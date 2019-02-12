@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, lazy } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
@@ -6,7 +6,8 @@ import ReactGA from 'react-ga';
 import cookie from 'js-cookie';
 
 import Header from '../components/Template/Header';
-import Nav from '../components/Template/Nav';
+const Nav = lazy(() => import('../components/Template/Nav'));
+
 
 if (NODE_ENV === 'production') {
   ReactGA.initialize(GA_ID);

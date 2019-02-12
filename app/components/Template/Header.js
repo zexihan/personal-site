@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import { Link } from 'react-router-dom';
 import cookie from 'js-cookie';
 
-import Hamburger from './Hamburger';
+const Hamburger = lazy(() => import('./Hamburger'));
+
 import routes from '../../data/routes';
 
 const { id, admin } = cookie.get();
