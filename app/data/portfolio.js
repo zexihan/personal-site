@@ -1,43 +1,69 @@
 // TODO Add a couple lines about each project
 const data = [
   {
-    title: 'Nearest Dollar',
-    subtitle: '2015 BVP Hackathon',
-    link: '/portfolio/nearestdollar/',
-    image: '/images/portfolio/nearestdollar.jpg',
-    date: '2015-11-20',
-    desc: 'Built for a social impact hackathon. '
-      + 'NearestDollar connected to your bank accounts, credit cards, '
-      + 'or debit cards and rounded up your purchases to donate the balance to '
-      + 'the charity of your choice.',
+    title: 'Parallel Matrix Multiplication',
+    subtitle: '',
+    link: '/documents/Parallel_Matrix_Multiplication.pdf',
+    image: '/images/portfolio/aws-emr.jpg',
+    date: '2018-12',
+    desc: 'Studied the different parallelization mechanisms for matrix multiplication in MapReduce, including Horizontal-Vertical Partitioning and Vertical-Horizontal Partitioning for both dense and sparse input.',
   }, {
-    title: 'Harvest',
-    subtitle: 'Won 3rd. place in 2015 Techcrunch Disrupt SF Hackathon',
-    link: 'https://devpost.com/software/harvest',
-    image: '/images/portfolio/harvest.jpg',
-    date: '2015-09-20',
-    desc: 'Won ~ $7000 in prizes for an advanced, low cost monitoring solution '
-      + 'for crops. Harvest was designed to catch irrigation leaks, overwatering, '
-      + 'and nutrient deficiencies at an affordable price for the developing world.',
+    title: 'Reseller Identification for Online Shopping Business',
+    subtitle: '',
+    link: '/documents/Reseller_Identification.pdf',
+    image: '/images/portfolio/rgg-reseller.jpg',
+    date: '2018-06',
+    desc: 'Feature engineering and XGBoost model training from an iterative perspective to identify suspect resellers from over 2 million online shopping buyers.',
   }, {
-    title: 'Space Potato',
-    subtitle: 'A kickstarter funded potato powered weather balloon.',
-    link: 'http://www.spacepotato.org',
-    image: '/images/portfolio/spacepotato.jpg',
-    date: '2015-06-28',
-    desc: 'Launched a potato battery powered weather balloon with two cameras '
-      + 'and gps transponder. Resulting photos were published in a coffee table book. '
-      + 'You can email me for a copy.',
+    title: 'Business-Neighborhood Interaction on Yelp and Census Data',
+    subtitle: '',
+    link: '/documents/Project_Report_CS6220.pdf',
+    image: '/images/portfolio/yelp-clustering.jpg',
+    date: '2017-12',
+    desc: 'A data mining project for understanding how businesses and neighborhoods interact. Employed different clustering techniques to investigate the relationship between business dynamics and neighborhood characteristics. The former was revealed by clustering patronage patterns in Yelp data, the latter was shown by clustering neighborhoods by census data.',
   }, {
-    title: 'Cat Detector',
-    subtitle: 'A convolutional neural network to classify cats! (and dogs)',
+    title: 'Video Classification on YouTube-8M Dataset',
+    subtitle: '',
     link: '/project/catdetector/',
-    image: '/images/portfolio/catdetector.jpg',
-    date: '2015-05-15',
-    desc: 'Trained a convolutional neural network to classify between ~ 80 cats breeds. '
-     + 'Over 60,000 cats were classified before server bills made the project too expensive '
-     + 'to continue hosting.',
-  },
+    image: '/images/portfolio/youtube-8m.jpg',
+    date: '2017-04',
+    desc: 'Developed a classifier with TensorFlow that could assign the class label based on deep features of the video using a subset of the Google\'s large- scale YouTube - 8M dataset.Compared the model and accuracy performance of different machine learning algorithms(LR, SVM, ANN).',
+  }, {
+    title: 'Visual Search with Deep Learning',
+    subtitle: '',
+    link: 'http://zexihancs.weebly.com/imageretrieval.html',
+    image: '/images/portfolio/image-retrieval.jpg',
+    date: '2016-05',
+    desc: 'Developed a three-stage hybrid image retrieval framework based on deep convolutional neural networks, which is effective and efficient in dealing with image retrieval problem of the same style product. Alibaba large-scale image dataset ALISC-5M is used in this project, which contains five million product images categorized into 10 high-level concepts and 676 sub concepts.',
+  }, {
+    title: 'NAO Robot',
+    subtitle: '',
+    link: 'http://zexihancs.weebly.com/naorobot.html',
+    image: '/images/portfolio/nao-robot.jpg',
+    date: '2016-02',
+    desc: 'Designed and built a robot interactive program to recognize the temperature and color of the target object for NAO Robot. Techniques such as voice recognition, motion interaction and image processing were involved.',
+  }, {
+    title: 'Ball Suit',
+    subtitle: '',
+    link: 'http://zexihancs.weebly.com/ballsuit.html',
+    image: '/images/portfolio/ball-suit.jpg',
+    date: '2015-04',
+    desc: 'Designed and implemented four interesting ball games in Processing interacted with Arduino. A self-made sphere game controller with accelerometer was introduced as a new human computer interaction for gaming.',
+  }, {
+    title: 'MEBO',
+    subtitle: '',
+    link: 'http://zexihancs.weebly.com/mebo.html',
+    image: '/images/portfolio/mebo.jpg',
+    date: '2015-05',
+    desc: 'MEBO Visualized Microenvironment Monitoring System can real-time monitor the environment condition with eight benchmarks around the device. Sensors for environment, data visualization, interactive design and android app are involved in the system.',
+  }, {
+    title: 'Electronic Keyboard',
+    subtitle: '',
+    link: 'http://zexihancs.weebly.com/electronickeyboard.html',
+    image: '/images/portfolio/electronic-keyboard.jpg',
+    date: '2014-09',
+    desc: 'Designed and implemented a single-chip based electronic keyboard which can play music and have interactive teaching mode for beginners.',
+  }, 
 ];
 
 export default data;

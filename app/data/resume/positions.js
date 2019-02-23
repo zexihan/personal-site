@@ -13,7 +13,7 @@ const positions = [
   }, {
     company: 'National Laboratory of Pattern Recognition',
     position: 'Research Assistant',
-    link: 'http://enveritas.org',
+    link: '',
     daterange: 'September 2016 - Present',
     points: [
       'Designed and built a Three-stage Hybrid Visual Search Framework (Classification, Object Detection and Matching) to the task of same-style product image retrieval with convolutional neural networks.',
