@@ -21,6 +21,11 @@ const pages = [
     heading: 'PORTFOLIO',
   },
   {
+    route: '/photograph',
+    title: 'Photograph | Zexi Han',
+    heading: 'PHOTOGRAPH',
+  },
+  {
     route: '/stats',
     title: 'Stats | Zexi Han',
     heading: 'STATS',
