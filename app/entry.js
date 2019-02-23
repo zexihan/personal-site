@@ -22,6 +22,7 @@ ReactDOM.render(
     <Switch>
       <Route exact path="/" component={Index} />
       <Route path="/about" component={About} />
+      <Route path="/blog/portfolio" component={Portfolio} />
       <Route path="/portfolio" component={Portfolio} />
       <Route path="/stats" component={Stats} />
       <Route path="/contact" component={Contact} />
