@@ -16,9 +16,9 @@ const pages = [
     heading: 'ABOUT ME',
   },
   {
-    route: '/projects',
-    title: 'Projects | Zexi Han',
-    heading: 'PROJECTS',
+    route: '/portfolio',
+    title: 'Portfolio | Zexi Han',
+    heading: 'PORTFOLIO',
   },
   {
     route: '/stats',

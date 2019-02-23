@@ -4,13 +4,13 @@ import Helmet from 'react-helmet';
 
 import Main from '../layouts/Main';
 
-import Cell from '../components/Projects/Cell';
-import data from '../data/projects';
+import Cell from '../components/Portfolio/Cell';
+import data from '../data/portfolio';
 
-const Projects = () => (
+const Portfolio = () => (
   <Main>
-    <Helmet title="Projects" />
-    <article className="post" id="projects">
+    <Helmet title="Portfolio" />
+    <article className="post" id="portfolio">
       <header>
         <div className="title">
           <h2><Link to="/portfolio">Portfolio</Link></h2>
@@ -27,4 +27,4 @@ const Projects = () => (
   </Main>
 );
 
-export default Projects;
+export default Portfolio;

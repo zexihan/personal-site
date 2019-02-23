@@ -3,7 +3,7 @@ const data = [
   {
     title: 'Nearest Dollar',
     subtitle: '2015 BVP Hackathon',
-    link: '/projects/nearestdollar/',
+    link: '/portfolio/nearestdollar/',
     image: '/images/projects/nearestdollar.jpg',
     date: '2015-11-20',
     desc: 'Built for a social impact hackathon. '

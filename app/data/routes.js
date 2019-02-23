@@ -13,8 +13,8 @@ const data = [
     label: 'Resume',
   },
   {
-    path: '/projects',
-    label: 'Projects',
+    path: '/portfolio',
+    label: 'Portfolio',
   },
   {
     path: '/stats',
