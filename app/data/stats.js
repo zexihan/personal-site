@@ -5,12 +5,12 @@ const data = {
   },
   countries: {
     label: 'Countries visited',
-    value: 53,
-    link: 'https://www.google.com/maps/d/embed?mid=1iBBTscqateQ93pWFVfHCUZXoDu8&z=2',
+    value: 4,
+    // link: 'https://www.google.com/maps/d/embed?mid=1iBBTscqateQ93pWFVfHCUZXoDu8&z=2',
   },
   location: {
     label: 'Current city',
-    value: 'New York, NY',
+    value: 'Boston, MA',
   },
 };
 

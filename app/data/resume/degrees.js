@@ -1,14 +1,19 @@
 const degrees = [
   {
-    school: 'Stanford University',
-    degree: 'M.S. Computational and Mathematical Engineering',
-    link: 'https://stanford.edu',
+    school: 'Northeastern University',
+    degree: 'M.S. Data Science',
+    link: 'https://www.northeastern.edu/',
+    year: 2019,
+  }, {
+    school: 'Beijing University of Posts and Telecommunications',
+    degree: 'B.S. Telecommunications Engineering',
+    link: 'https://buffalo.edu',
     year: 2016,
   }, {
-    school: 'University at Buffalo',
-    degree: 'B.S. Electrical Engineering, Computer Engineering',
-    link: 'https://buffalo.edu',
-    year: 2012,
+    school: 'Queen Mary University of London',
+    degree: 'B.S. Telecommunications Engineering',
+    link: 'https://www.qmul.ac.uk/',
+    year: 2016,
   },
 ];
 
