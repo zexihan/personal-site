@@ -7,7 +7,7 @@ const degrees = [
   }, {
     school: 'Beijing University of Posts and Telecommunications',
     degree: 'B.S. Telecommunications Engineering',
-    link: 'https://buffalo.edu',
+    link: 'https://english.bupt.edu.cn/',
     year: 2016,
   }, {
     school: 'Queen Mary University of London',
