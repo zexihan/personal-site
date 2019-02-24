@@ -46,7 +46,7 @@ export const skills = [
   },
   {
     title: 'Node.JS',
-    compentency: 5,
+    compentency: 4,
     category: ['Web Development', 'Frameworks', 'Javascript'],
   },
   {
@@ -56,7 +56,7 @@ export const skills = [
   },
   {
     title: 'Bootstrap',
-    compentency: 5,
+    compentency: 4,
     category: ['Web Development', 'Frameworks'],
   },
   {
@@ -66,7 +66,7 @@ export const skills = [
   },
   {
     title: 'Heroku',
-    compentency: 2,
+    compentency: 3,
     category: ['Web Development', 'Tools'],
   },
   {
@@ -136,7 +136,7 @@ export const skills = [
   },
   {
     title: 'CSS',
-    compentency: 5,
+    compentency: 4,
     category: ['Web Development', 'Languages'],
   },
   {
@@ -147,7 +147,7 @@ export const skills = [
   },
   {
     title: 'Java',
-    compentency: 4,
+    compentency: 5,
     category: ['Languages'],
 
   },
@@ -191,5 +191,50 @@ export const skills = [
     title: 'Scikit-Lean',
     compentency: 4,
     category: ['Data Science', 'Python'],
+  },
+  {
+    title: 'Tableau',
+    compentency: 3,
+    category: ['Data Science'],
+  },
+  {
+    title: 'Snowflake',
+    compentency: 3,
+    category: ['Databases'],
+  },
+  {
+    title: 'Docker',
+    compentency: 3,
+    category: ['Tools'],
+  },
+  {
+    title: 'jQuery',
+    compentency: 4,
+    category: ['Web Development'],
+  },
+  {
+    title: 'R',
+    compentency: 5,
+    category: ['Data Science', 'Languages'],
+  },
+  {
+    title: 'MapReduce',
+    compentency: 4,
+    category: ['Frameworks'],
+  },
+  {
+    title: 'Redux',
+    compentency: 3,
+    category: ['Web Development', 'Javascript'],
+  },
+  {
+    title: 'Spark',
+    compentency: 3,
+    category: ['Frameworks'],
+  },
+  {
+    title: 'Spring Boot',
+    compentency: 3,
+    category: ['Web Development', 'Frameworks'],
   },
 ];

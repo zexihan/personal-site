@@ -53,8 +53,8 @@ const useInterval = (callback, delay) => {
 };
 
 const Contact = () => {
-  const hold = 50; // ticks to wait after message is complete before rendering next message
-  const delay = 50; // tick length in mS
+  const hold = 30; // ticks to wait after message is complete before rendering next message
+  const delay = 30; // tick length in mS
 
   const [idx, updateIter] = useState(0); // points to current message
   const [message, updateMessage] = useState(messages[idx]);
@@ -87,7 +87,7 @@ const Contact = () => {
           </div>
         </header>
         <div className="email-at">
-          <p>Feel free to get in touch. You can email me at: </p>
+          <p>Feel free to get in touch by email. You can send: </p>
           <div
             className="inline-container"
             style={validateText(message) ? {} : { color: 'red' }}

@@ -39,7 +39,27 @@ const courses = [
     number: 'DS 5110',
     // link: 'http://web.stanford.edu/class/math220/index.html',
     univerity: 'Northeastern',
-  }, 
+  }, {
+    title: 'Software Engineering',
+    number: 'EBU5304',
+    // link: 'http://web.stanford.edu/class/math220/index.html',
+    univerity: 'QMUL',
+  }, {
+    title: 'Linear Algebra',
+    number: 'BBC4913',
+    // link: 'http://web.stanford.edu/class/math220/index.html',
+    univerity: 'BUPT',
+  }, {
+    title: 'Probability Theory and Stochastic Statistics',
+    number: 'BBC4941',
+    // link: 'http://web.stanford.edu/class/math220/index.html',
+    univerity: 'BUPT',
+  }, {
+    title: 'Digital Signal Processing',
+    number: 'BBU6502',
+    // link: 'http://web.stanford.edu/class/math220/index.html',
+    univerity: 'BUPT',
+  },
 ];
 
 export default courses;

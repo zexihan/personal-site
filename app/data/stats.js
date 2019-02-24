@@ -12,6 +12,10 @@ const data = {
     label: 'Current city',
     value: 'Boston, MA',
   },
+  leetcode: {
+    label: 'LeetCode problems solved',
+    value: '226',
+  },
 };
 
 export default data;

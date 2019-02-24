@@ -1,10 +1,24 @@
 // TODO Add a couple lines about each project
 const data = [
   {
+    title: 'TripElf',
+    subtitle: '',
+    link: '/documents/Parallel_Matrix_Multiplication.pdf',
+    image: '/images/portfolio/under-construction.jpg',
+    date: '2019-04',
+    desc: 'Neighborhood-level review text summarization modeling and an interactive map web application for visualization.',
+  }, {
+    title: 'TuneS',
+    subtitle: '',
+    link: '/documents/Parallel_Matrix_Multiplication.pdf',
+    image: '/images/portfolio/under-construction.jpg',
+    date: '2019-04',
+    desc: 'A full stack music-based social network web application.',
+  }, {
     title: 'Parallel Matrix Multiplication',
     subtitle: '',
     link: '/documents/Parallel_Matrix_Multiplication.pdf',
-    image: '/images/portfolio/aws-emr.jpg',
+    image: '/images/portfolio/mapreduce.jpg',
     date: '2018-12',
     desc: 'Studied the different parallelization mechanisms for matrix multiplication in MapReduce, including Horizontal-Vertical Partitioning and Vertical-Horizontal Partitioning for both dense and sparse input.',
   }, {
@@ -13,7 +27,7 @@ const data = [
     link: '/documents/Reseller_Identification.pdf',
     image: '/images/portfolio/rgg-reseller.jpg',
     date: '2018-06',
-    desc: 'Feature engineering and XGBoost model training from an iterative perspective to identify suspect resellers from over 2 million online shopping buyers.',
+    desc: 'Feature engineering and XGBoost model training from an iterative perspective to identify resellers from over 2 million online shopping buyers.',
   }, {
     title: 'Business-Neighborhood Interaction on Yelp and Census Data',
     subtitle: '',
@@ -34,7 +48,7 @@ const data = [
     link: 'http://zexihancs.weebly.com/imageretrieval.html',
     image: '/images/portfolio/image-retrieval.jpg',
     date: '2016-05',
-    desc: 'Developed a three-stage hybrid image retrieval framework based on deep convolutional neural networks, which is effective and efficient in dealing with image retrieval problem of the same style product. Alibaba large-scale image dataset ALISC-5M is used in this project, which contains five million product images categorized into 10 high-level concepts and 676 sub concepts.',
+    desc: 'Developed a three-stage hybrid image retrieval framework based on deep convolutional neural networks, which is effective and efficient in dealing with the same-style product image retrieval problem. Alibaba large-scale image dataset ALISC-5M is used in this project, which contains five million product images categorized into 10 high-level concepts and 676 sub concepts.',
   }, {
     title: 'NAO Robot',
     subtitle: '',
@@ -63,7 +77,7 @@ const data = [
     image: '/images/portfolio/electronic-keyboard.jpg',
     date: '2014-09',
     desc: 'Designed and implemented a single-chip based electronic keyboard which can play music and have interactive teaching mode for beginners.',
-  }, 
+  },
 ];
 
 export default data;
