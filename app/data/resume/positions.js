@@ -14,7 +14,7 @@ const positions = [
     company: 'National Laboratory of Pattern Recognition',
     position: 'Research Assistant',
     link: '',
-    daterange: 'September 2016 - Present',
+    daterange: 'August 2015 - May 2016',
     points: [
       'Designed and built a Three-stage Hybrid Visual Search Framework (Classification, Object Detection and Matching) to the task of same-style product image retrieval with convolutional neural networks.',
       'Experimented on the Taobao 5 million product image dataset with multiple CNN models using Caffe.',

@@ -4,27 +4,27 @@ const projects = [
     company: 'TripElf - Interactive Map with Neighborhood-Level Airbnb Review Summarization',
     position: 'NU',
     link: '',
-    daterange: 'January 2018 - June 2018',
+    daterange: 'January 2019 - April 2019',
     points: [
       'Proposed and developed an application to help travelers pick their favorite short-term rental neighborhoods before traveling by demonstrating the machine-generated overviews of the neighborhoods.',
       'Explored and applied various text models, such as KL-Sum, LDA-Sum and ELMo, to summarize Airbnb reviews and generate neighborhood overview from travelers’ viewpoint.',
       'Implemented an interactive map web app in React and Mapbox GL JS for data visualization, drawing travelers an vivid picture of NYC neighborhoods, including descriptive statistics such as entertainment, expense, transit, noise and safety.',
     ],
   }, {
-    company: 'Feedback Collection Fullstack Web App',
+    company: 'TuneS - Social Music Web App',
     position: 'NU',
     link: '',
-    daterange: 'September 2016 - Present',
+    daterange: 'January 2019 - April 2019',
     points: [
-      'Developed a web app with MERN stack that serves for startup owner’s app/service by sending customer an email requesting feedback and tabulating survey results to the user.',
-      'Handled authentication, payment and automated emails with RESTful APIs in Express and Node.js back-end.',
-      'Designed and programmed an interactive React and Redux front-end utilizing AJAX technology.',
+      'Developed a web app with MERN stack that serves for music fans to engage with other music lovers and discover new songs and artists with Spotify Web API.',
+      'Handled authentication, like/share/follow functions with RESTful APIs built in Express and MongoDB back-end.',
+      'Designed and programmed a responsive React front-end utilizing Bootstrap and AJAX techniques.',
     ],
   }, {
     company: 'Parallel Matrix Multiplication in MapReduce',
     position: 'NU',
     link: '',
-    daterange: 'September 2016 - Present',
+    daterange: 'October 2018 - December 2018',
     points: [
       'Studied and implemented the different parallelization mechanisms for large matrix multiplication in MapReduce, including Horizontal-Vertical Partitioning and Vertical-Horizontal Partitioning for synthetic dense and sparse matrices.',
       'Measured and compared speedup and scalability performance for the two intelligent partitioning methods on Amazon EMR and S3 with different settings of the cluster.',
@@ -33,7 +33,7 @@ const projects = [
     company: 'Business-Neighborhood Interaction on Yelp and Census Data',
     position: 'NU',
     link: '',
-    daterange: 'September 2016 - Present',
+    daterange: 'September 2017 - December 2017',
     points: [
       'Extracted representative neighborhood-level features of business dynamics from Yelp dataset.',
       'Employed K-Means and GMM clustering at both the Zillow Neighborhood and Census Tract level to identify clusters based on population characteristics and socioeconomic metrics.',
