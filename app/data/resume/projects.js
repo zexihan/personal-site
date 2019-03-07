@@ -16,7 +16,7 @@ const projects = [
     link: '',
     daterange: 'January 2019 - April 2019',
     points: [
-      'Developed a web app with MERN stack that serves for music fans to engage with other music lovers and discover new songs and artists with Spotify Web API.',
+      'Developed a web app using MERN stack and Spotify Web API that serves for music fans to engage with other music lovers and discover new songs and artists.',
       'Handled authentication, like/share/follow functions with RESTful APIs built in Express and MongoDB back-end.',
       'Designed and programmed a responsive React front-end utilizing Bootstrap and AJAX techniques.',
     ],
