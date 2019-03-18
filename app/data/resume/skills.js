@@ -51,7 +51,7 @@ export const skills = [
   },
   {
     title: 'React',
-    compentency: 4,
+    compentency: 5,
     category: ['Web Development', 'Frameworks', 'Javascript'],
   },
   {
