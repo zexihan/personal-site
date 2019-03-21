@@ -12,7 +12,7 @@ const data = [
   {
     title: "TuneS (ongoing)",
     subtitle: "",
-    link: "https://tunes-client.herokuapp.com",
+    link: "https://tunes-app.herokuapp.com",
     image: "/images/portfolio/tunes.png",
     date: "2019-04",
     desc: "A full stack music-based social network web application."

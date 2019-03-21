@@ -8,19 +8,19 @@ const projects = [
     daterange: "January 2019 - April 2019",
     points: [
       "Proposed and developed an application to help travelers pick their favorite short-term rental neighborhoods before traveling by demonstrating the machine-generated overviews of the neighborhoods.",
-      "Explored and applied various text models, such as KL-Sum, LDA-Sum and ELMo, to summarize Airbnb reviews and generate neighborhood overview from travelers’ viewpoint.",
-      "Implemented an interactive map web app in React and Mapbox GL JS for data visualization, drawing travelers an vivid picture of NYC neighborhoods, including descriptive statistics such as entertainment, expense, transit, noise and safety."
+      "Explored and applied various text models, such as KL-Sum, LDA-Sum and ELMo, to summarize Airbnb reviews and generate neighborhood overview from travelers’ point of view.",
+      "Implemented an interactive-map web app in React and Mapbox GL JS for data visualization, drawing travelers a vivid picture of NYC neighborhoods from the aspect of recreation, transit, noise, safety, expense, and Airbnb host."
     ]
   },
   {
     company: "TuneS - Social Music Web App (ongoing)",
     position: "NU",
-    link: "https://tunes-client.herokuapp.com",
+    link: "https://tunes-app.herokuapp.com",
     daterange: "January 2019 - April 2019",
     points: [
-      "Developed a web app using MERN stack and Spotify Web API that serves for music fans to engage with other music lovers and discover new songs and artists.",
-      "Handled authentication, like/share/follow functions with RESTful APIs built in Express and MongoDB back-end.",
-      "Designed and programmed a responsive React front-end utilizing Bootstrap and AJAX techniques."
+      "Developed a SPA using MERN stack and Spotify Web API that serves for music fans to engage with other music lovers and discover new songs and artists.",
+      "Handled OAuth authorization, like/share/follow functions with a RESTful API built in Express and MongoDB back-end.",
+      "Designed and wrote a responsive and interactive React front-end utilizing Bootstrap and AJAX techniques."
     ]
   },
   {
