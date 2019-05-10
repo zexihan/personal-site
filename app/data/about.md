@@ -17,7 +17,7 @@ I’m seeking full-time opportunities of software engineer or data scientist.
 
 #### Travel / Geography
 
-- I am from originally from Beijing, China. I have since lived in
+- I am originally from Beijing, China. I have since lived in
 Boston.
 
 - I've only been to 4 countries, China, United Kingdom, United States of America, and Canada.
