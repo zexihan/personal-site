@@ -1,7 +1,7 @@
 // TODO Add a couple lines about each project
 const data = [
   {
-    title: "TripElf (ongoing)",
+    title: "TripElf",
     subtitle: "",
     link: "https://tripelf.herokuapp.com",
     image: "/images/portfolio/tripelf.png",
@@ -10,7 +10,7 @@ const data = [
       "Neighborhood-level review text summarization modeling and an interactive map web application for visualization."
   },
   {
-    title: "TuneS (ongoing)",
+    title: "TuneS",
     subtitle: "",
     link: "https://tunes-app.herokuapp.com",
     image: "/images/portfolio/tunes.png",

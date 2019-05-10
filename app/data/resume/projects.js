@@ -2,7 +2,7 @@
 const projects = [
   {
     company:
-      "TripElf - Interactive Map with Neighborhood-Level Airbnb Review Summarization (ongoing)",
+      "TripElf - Interactive Map with Neighborhood-Level Airbnb Review Summarization",
     position: "NU",
     link: "https://tripelf.herokuapp.com",
     daterange: "January 2019 - April 2019",
@@ -13,7 +13,7 @@ const projects = [
     ]
   },
   {
-    company: "TuneS - Social Music Web App (ongoing)",
+    company: "TuneS - Social Music Web App",
     position: "NU",
     link: "https://tunes-app.herokuapp.com",
     daterange: "January 2019 - April 2019",
