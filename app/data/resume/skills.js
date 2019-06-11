@@ -75,6 +75,26 @@ export const skills = [
     category: ['Web Development', 'Databases'],
   },
   {
+    title: 'MySQL',
+    compentency: 4,
+    category: ['Web Development', 'Databases'],
+  },
+  {
+    title: 'PostgreSQL',
+    compentency: 4,
+    category: ['Web Development', 'Databases'],
+  },
+  {
+    title: 'Redis',
+    compentency: 4,
+    category: ['Web Development', 'Databases'],
+  },
+  {
+    title: 'Realm',
+    compentency: 4,
+    category: ['Web Development', 'Databases'],
+  },
+  {
     title: 'Matlab',
     compentency: 3,
     category: ['Data Science', 'Machine Learning', 'Languages'],
@@ -90,12 +110,17 @@ export const skills = [
     category: ['Web Development', 'Frameworks', 'Javascript'],
   },
   {
-    title: 'D3',
+    title: 'D3.js',
     compentency: 3,
     category: ['Web Development', 'Frameworks', 'Design', 'Javascript'],
   },
   {
     title: 'Flask',
+    compentency: 4,
+    category: ['Web Development', 'Frameworks', 'Python'],
+  },
+  {
+    title: 'Django',
     compentency: 4,
     category: ['Web Development', 'Frameworks', 'Python'],
   },
@@ -218,7 +243,7 @@ export const skills = [
     category: ['Data Science', 'Languages'],
   },
   {
-    title: 'MapReduce',
+    title: 'Hadoop MapReduce',
     compentency: 4,
     category: ['Frameworks'],
   },

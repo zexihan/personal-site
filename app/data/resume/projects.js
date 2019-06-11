@@ -7,9 +7,10 @@ const projects = [
     link: "https://tripelf.herokuapp.com",
     daterange: "January 2019 - April 2019",
     points: [
-      "Proposed and developed an application to help travelers pick their favorite short-term rental neighborhoods before traveling by demonstrating the machine-generated overviews of the neighborhoods.",
-      "Explored and applied various text models, such as KL-Sum, LDA-Sum and ELMo, to summarize Airbnb reviews and generate neighborhood overview from travelers’ point of view.",
-      "Implemented an interactive-map web app in React and Mapbox GL JS for data visualization, drawing travelers a vivid picture of NYC neighborhoods from the aspect of recreation, transit, noise, safety, expense, and Airbnb host."
+      "Developed a web map application with React, Redux, JPA with Spring Boot, and MySQL stack.",
+      "Developed the frontend with React, Mapbox GL JS, and D3.js; used Redux for centralized state management.",
+      "Implemented the MVC backend with Spring data JPA and MySQL database for site activity storage",
+      "Applied text models (KL-Sum, LDA-Sum and ELMo) for Airbnb reviews summarization with NLTK and PyTorch."
     ]
   },
   {
@@ -18,9 +19,10 @@ const projects = [
     link: "https://tunes-app.herokuapp.com",
     daterange: "January 2019 - April 2019",
     points: [
-      "Developed a SPA using MERN stack and Spotify Web API that serves for music fans to engage with other music lovers and discover new songs and artists.",
-      "Handled OAuth authorization, like/share/follow functions with a RESTful API built in Express and MongoDB back-end.",
-      "Designed and wrote a responsive and interactive React front-end utilizing Bootstrap and AJAX techniques."
+      "Developed a music themed SPA using Angular, Express, MongoDB, Node.js stack and Spotify Web API.",
+      "Designed and developed the AJAX-based frontend with Angular for interactions (browse/comment/like/share/follow).",
+      "Implemented the RESTful APIs with Express and MongoDB/mongoose; used Redis as web cache.",
+      "Used Passport.js for both local and OAuth-based user authentication."
     ]
   },
   {
@@ -29,19 +31,20 @@ const projects = [
     link: "/documents/Parallel_Matrix_Multiplication.pdf",
     daterange: "October 2018 - December 2018",
     points: [
-      "Studied and implemented the different parallelization mechanisms for large matrix multiplication in MapReduce, including Horizontal-Vertical Partitioning and Vertical-Horizontal Partitioning for synthetic dense and sparse matrices.",
-      "Measured and compared speedup and scalability performance for the two intelligent partitioning methods on Amazon EMR and S3 with different settings of the cluster."
+      "Implemented the parallelization algorithms (Horizontal-Vertical Partitioning and Vertical-Horizontal Partitioning) for large synthetic dense and sparse matrix multiplication with Hadoop MapReduce in Java.",
+      "Implemented the same algorithms using Spark Scala and tested their speedup and scalability performance.",
+      "Deployed the programs onto Amazon EMR running with different settings of the cluster; stored the results to S3."
     ]
   },
   {
-    company: "Business-Neighborhood Interaction on Yelp and Census Data",
-    position: "NU",
-    link: "/documents/Project_Report_CS6220.pdf",
-    daterange: "September 2017 - December 2017",
+    company: "Magical Newspaper iOS App with ARKit and CreateML/CoreML",
+    position: "",
+    link: "",
+    daterange: "June 2018 - September 2018",
     points: [
-      "Extracted representative neighborhood-level features of business dynamics from Yelp dataset.",
-      "Employed K-Means and GMM clustering at both the Zillow Neighborhood and Census Tract level to identify clusters based on population characteristics and socioeconomic metrics.",
-      "Investigated the relationship between local business dynamics and neighborhood characteristics."
+      "Created a mobile app in Swift using ARKit for detecting images and playing video in augmented reality.",
+      "Used CreateML/CoreML for sentiment prediction of newspaper title by analyzing tweets fetched from Twitter API.",
+      "Designed and developed abstract object model classes, storyboard views, and view controllers."
     ]
   }
 ];

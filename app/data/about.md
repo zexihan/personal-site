@@ -18,7 +18,7 @@ I’m seeking full-time opportunities of software engineer or data scientist.
 #### Travel / Geography
 
 - I am originally from Beijing, China. I have since lived in
-Boston.
+Boston for 3 years until I moved to Silicon Valley in 2019.
 
 - I've only been to 4 countries, China, United Kingdom, United States of America, and Canada.
 
@@ -28,7 +28,7 @@ Boston.
 
 - In 2018, I visited: Canada.
 
-- In 2019, I plan to visit: come on, let me find a job first.
+- In 2019, I want to visit... but I will find a job first!
 
 - To be a voyager.
 

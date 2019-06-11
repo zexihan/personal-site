@@ -1,7 +1,7 @@
 // TODO Add a couple lines about each project
 const data = [
   {
-    title: "TripElf",
+    title: "TripElf – Map-based Web App",
     subtitle: "",
     link: "https://tripelf.herokuapp.com",
     image: "/images/portfolio/tripelf.png",
@@ -10,7 +10,7 @@ const data = [
       "Neighborhood-level review text summarization modeling and an interactive map web application for visualization."
   },
   {
-    title: "TuneS",
+    title: "TuneS – Social Music Website",
     subtitle: "",
     link: "https://tunes-app.herokuapp.com",
     image: "/images/portfolio/tunes.png",
@@ -27,7 +27,7 @@ const data = [
       "Studied the different parallelization mechanisms for matrix multiplication in MapReduce, including Horizontal-Vertical Partitioning and Vertical-Horizontal Partitioning for both dense and sparse input."
   },
   {
-    title: "Reseller Identification for Online Shopping Business",
+    title: "End-to-End Machine Learning – Reseller Identification",
     subtitle: "",
     link: "/documents/Reseller_Identification.pdf",
     image: "/images/portfolio/rgg-reseller.jpg",
@@ -54,7 +54,7 @@ const data = [
       "Developed a classifier with TensorFlow that could assign the class label based on deep features of the video using a subset of the Google's large- scale YouTube - 8M dataset.Compared the model and accuracy performance of different machine learning algorithms(LR, SVM, ANN)."
   },
   {
-    title: "Visual Search with Deep Learning",
+    title: "Caffe-based Visual Search for Same-Style Product Images",
     subtitle: "",
     link: "http://zexihancs.weebly.com/imageretrieval.html",
     image: "/images/portfolio/image-retrieval.jpg",
@@ -81,7 +81,7 @@ const data = [
       "Designed and implemented four interesting ball games in Processing interacted with Arduino. A self-made sphere game controller with accelerometer was introduced as a new human computer interaction for gaming."
   },
   {
-    title: "MEBO",
+    title: "MEBO – Embeded System Development",
     subtitle: "",
     link: "http://zexihancs.weebly.com/mebo.html",
     image: "/images/portfolio/mebo.jpg",

@@ -14,7 +14,7 @@ const data = {
   },
   leetcode: {
     label: "LeetCode problems solved",
-    value: "270"
+    value: "400"
   }
 };
 
