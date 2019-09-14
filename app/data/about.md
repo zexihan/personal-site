@@ -1,13 +1,10 @@
 
 #### Intro
-Hi, I am Zexi Han, a grad student pursuing M.S. in Data Science at Northeastern University.
+Hi, I am Zexi Han, a computer vision software engineer working in Silicon Valley.
 <br><br>
 I can speak English, Mandarin and Japanese (still learning…). I love traveling and enjoy communicating with local people. Dream of being a voyager and travelling around the world! And here is my Instagram to follow!
 <br><br>
 In terms of specialization, I made efforts to gain an insight into various machine learning algorithms and have a keen interest in applying them to real-world scenarios bringing convenience to people’s life. I am also interested in building web or mobile applications employing various tech stacks, which is full of fun!
-<br><br>
-#### Currently
-I’m seeking full-time opportunities of software engineer or data scientist.
 <br><br>
 #### I like
 - Fine Arts
