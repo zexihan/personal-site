@@ -23,11 +23,11 @@ const Nav = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        Hi, I&apos;m Zexi, a software engineer. I like building things. I am
+        Hi, I&apos;m Zexi, a software engineer. I like building things. I am{" "}
         <a href="https://www.khoury.northeastern.edu/program/data-science-ms/">
           NU
         </a>
-        , <a href="https://english.bupt.edu.cn/">BUPT</a>, and 
+        , <a href="https://english.bupt.edu.cn/">BUPT</a>, and{" "}
         <a href="https://www.qmul.ac.uk/">QMUL</a> Alumni.
       </p>
       <ul className="actions">
