@@ -2,6 +2,14 @@
 const projects = [
   {
     company:
+      "Self-Driving Car Engineer Nanodegree Program",
+    position: "Udacity",
+    link: "",
+    daterange: "January 2020 - Present",
+    points: []
+  },
+  {
+    company:
       "TripElf - Interactive Map with Neighborhood-Level Airbnb Review Summarization",
     position: "NU",
     link: "https://tripelf.herokuapp.com",

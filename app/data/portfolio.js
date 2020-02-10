@@ -1,6 +1,15 @@
 // TODO Add a couple lines about each project
 const data = [
   {
+    title: "Point cloud people detection and tracking with 3D Deep Learning",
+    subtitle: "",
+    link: "",
+    image: "/images/portfolio/point_cloud.gif",
+    date: "2020-02",
+    desc:
+      "3D point cloud research for applications in cashierless store and more scenarios."
+  },
+  {
     title: "TripElf – Map-based Web App",
     subtitle: "",
     link: "https://tripelf.herokuapp.com",
