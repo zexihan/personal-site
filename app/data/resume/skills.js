@@ -3,14 +3,17 @@
 // TODO: Add Althetic Skills, Office Skills (?)
 export const categories = [
   {
+    name: 'Computer Vision',
+    color: '#747fff',
+  }, {
     name: 'Data Science',
     color: '#515dd4',
   }, {
     name: 'Databases',
     color: '#3896e2',
   }, {
-    name: 'Computer Vision',
-    color: '#747fff',
+    name: 'Deep Learning',
+    color: '#e47272',
   }, {
     name: 'Frameworks',
     color: '#64cb7b',
@@ -20,12 +23,6 @@ export const categories = [
   }, {
     name: 'Languages',
     color: '#6968b3',
-  }, {
-    name: 'Deep Learning',
-    color: '#e47272',
-  }, {
-    name: 'Other',
-    color: '#c3423f',
   }, {
     name: 'Python',
     color: '#37b1f5',
