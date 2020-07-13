@@ -1,11 +1,11 @@
 // TODO Add a couple lines about each project
 const data = [
   {
-    title: "Point cloud people detection and tracking with 3D Deep Learning",
+    title: "Pedestrian Detection and Tracking with 3D Deep Learning on Point Cloud",
     subtitle: "",
     link: "",
     image: "/images/portfolio/point_cloud.gif",
-    date: "2020-02",
+    date: "2020-06",
     desc:
       "3D point cloud research for applications in cashierless store and more scenarios."
   },
