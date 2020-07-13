@@ -4,12 +4,12 @@ Hi, I am Zexi Han, a computer vision software engineer working in Silicon Valley
 <br><br>
 I can speak English, Mandarin and Japanese (still learning…). I love traveling and enjoy communicating with local people. Dream of being a voyager and travelling around the world! And here is my Instagram to follow!
 <br><br>
-In terms of specialization, I made efforts to gain an insight into various machine learning algorithms and have a keen interest in applying them to real-world scenarios bringing convenience to people’s life. I am also interested in building web or mobile applications employing various tech stacks, which is full of fun!
+In terms of specialization, my latest work develops state-of-the-art visual recognition algorithms for cashier-less convenience stores with 3D deep learning on point cloud. Making efforts to gain an insight into various deep learning algorithms, I have a keen interest in applying them to make the world a better place. I am also interested in building web or mobile applications employing various tech stacks, which is full of fun!
 <br><br>
 #### I like
 - Fine Arts
 - [Photography](https://instagram.com/bloomingliam)
-- Rock Music
+- Listening to Music
 - Spring
 
 #### Travel / Geography
@@ -21,11 +21,11 @@ Boston for 3 years until I moved to Silicon Valley in 2019.
 
 - In 2015, I visited: United Kingdom.
 
-- In 2016, I visited: United States of America.
+- In 2016, I visited: United States.
 
 - In 2018, I visited: Canada.
 
-- In 2019, I want to visit... but I will find a job first!
+- In 2019, I found my first full-time job in United States! (visited nowhere though)
 
 - To be a voyager.
 

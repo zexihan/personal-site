@@ -1,12 +1,16 @@
 
 const projects = [
   {
-    company:
-      "Self-Driving Car Engineer Nanodegree Program",
+    company: "Self-Driving Car Engineer Nanodegree Program",
     position: "Udacity",
-    link: "",
-    daterange: "January 2020 - Present",
-    points: []
+    link: "https://graduation.udacity.com/confirm/TSNT3CFD",
+    daterange: "January 2020 - May 2020",
+    points: [
+      "Maneuvered a car around a virtual highway while stopping at red traffic lights by using perception, path planning and control modules through system integration.",
+      "Identified the lane boundaries from a front-facing camera on a car with distortion correction and gradient thresholding.",
+      "Trained deep learning models with Tensorflow and transfer learning to classify traffic signs.",
+      "Applied Extended Kalman Filter in C++ for sensor fusion to predict with certainty location of other vehicles.",
+    ],
   },
   {
     company:
@@ -18,8 +22,8 @@ const projects = [
       "Developed a web map application with React, Redux, JPA with Spring Boot, and MySQL stack.",
       "Developed the frontend with React, Mapbox GL JS, and D3.js; used Redux for centralized state management.",
       "Implemented the MVC backend with Spring data JPA and MySQL database for site activity storage",
-      "Applied text models (KL-Sum, LDA-Sum and ELMo) for Airbnb reviews summarization with NLTK and PyTorch."
-    ]
+      "Applied text models (KL-Sum, LDA-Sum and ELMo) for Airbnb reviews summarization with NLTK and PyTorch.",
+    ],
   },
   {
     company: "TuneS - Social Music Web App",
@@ -30,8 +34,8 @@ const projects = [
       "Developed a music themed SPA using Angular, Express, MongoDB, Node.js stack and Spotify Web API.",
       "Designed and developed the AJAX-based frontend with Angular for interactions (browse/comment/like/share/follow).",
       "Implemented the RESTful APIs with Express and MongoDB/mongoose; used Redis as web cache.",
-      "Used Passport.js for both local and OAuth-based user authentication."
-    ]
+      "Used Passport.js for both local and OAuth-based user authentication.",
+    ],
   },
   {
     company: "Parallel Matrix Multiplication in MapReduce",
@@ -41,8 +45,8 @@ const projects = [
     points: [
       "Implemented the parallelization algorithms (Horizontal-Vertical Partitioning and Vertical-Horizontal Partitioning) for large synthetic dense and sparse matrix multiplication with Hadoop MapReduce in Java.",
       "Implemented the same algorithms using Spark Scala and tested their speedup and scalability performance.",
-      "Deployed the programs onto Amazon EMR running with different settings of the cluster; stored the results to S3."
-    ]
+      "Deployed the programs onto Amazon EMR running with different settings of the cluster; stored the results to S3.",
+    ],
   },
   {
     company: "Magical Newspaper iOS App with ARKit and CreateML/CoreML",
@@ -52,9 +56,9 @@ const projects = [
     points: [
       "Created a mobile app in Swift using ARKit for detecting images and playing video in augmented reality.",
       "Used CreateML/CoreML for sentiment prediction of newspaper title by analyzing tweets fetched from Twitter API.",
-      "Designed and developed abstract object model classes, storyboard views, and view controllers."
-    ]
-  }
+      "Designed and developed abstract object model classes, storyboard views, and view controllers.",
+    ],
+  },
 ];
 
 export default projects;

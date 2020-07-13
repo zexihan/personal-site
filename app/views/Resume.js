@@ -41,8 +41,8 @@ const Resume = () => (
       </header>
       <a href="/documents/Resume_Zexi_Han.pdf">View PDF</a>
       <Education data={degrees} />
-      <Experience title="Professional Experience" data={positions} />
-      <Experience title="Project Experience" data={projects} />
+      <Experience title="Work Experience" data={positions} />
+      <Experience title="Projects" data={projects} />
       <Skills skills={skills} categories={categories} />
       <Courses data={courses} />
       <References />

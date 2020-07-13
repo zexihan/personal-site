@@ -9,7 +9,7 @@ export const categories = [
     name: 'Databases',
     color: '#3896e2',
   }, {
-    name: 'Design',
+    name: 'Computer Vision',
     color: '#747fff',
   }, {
     name: 'Frameworks',
@@ -21,7 +21,7 @@ export const categories = [
     name: 'Languages',
     color: '#6968b3',
   }, {
-    name: 'Machine Learning',
+    name: 'Deep Learning',
     color: '#e47272',
   }, {
     name: 'Other',
@@ -39,6 +39,26 @@ export const categories = [
 ];
 
 export const skills = [
+  {
+    title: 'OpenCV',
+    compentency: 5,
+    category: ['Computer Vision', 'C++', 'Python'],
+  },
+  {
+    title: 'C++',
+    compentency: 5,
+    category: ['Computer Vision', 'Languages'],
+  },
+  {
+    title: 'PCL',
+    compentency: 5,
+    category: ['Computer Vision', 'C++'],
+  },
+  {
+    title: 'PyTorch',
+    compentency: 5,
+    category: ['Data Science', 'Deep Learning', 'Computer Vision', 'Python'],
+  },
   {
     title: 'Javascript',
     compentency: 5,
@@ -97,12 +117,12 @@ export const skills = [
   {
     title: 'Matlab',
     compentency: 3,
-    category: ['Data Science', 'Machine Learning', 'Languages'],
+    category: ['Data Science', 'Languages'],
   },
   {
     title: 'Data Mining',
     compentency: 3,
-    category: ['Data Science', 'Machine Learning'],
+    category: ['Data Science'],
   },
   {
     title: 'Express.JS',
@@ -112,7 +132,7 @@ export const skills = [
   {
     title: 'D3.js',
     compentency: 3,
-    category: ['Web Development', 'Frameworks', 'Design', 'Javascript'],
+    category: ['Web Development', 'Frameworks', 'Javascript'],
   },
   {
     title: 'Flask',
@@ -127,7 +147,7 @@ export const skills = [
   {
     title: 'Data Analysis',
     compentency: 3,
-    category: ['Data Science', 'Machine Learning'],
+    category: ['Data Science'],
   },
   {
     title: 'Git',
@@ -137,22 +157,22 @@ export const skills = [
   {
     title: 'Numpy',
     compentency: 4,
-    category: ['Data Science', 'Machine Learning', 'Python'],
+    category: ['Data Science', 'Python'],
   },
   {
     title: 'Caffe',
     compentency: 3,
-    category: ['Machine Learning'],
+    category: ['Deep Learning', 'Computer Vision'],
   },
   {
     title: 'Tensorflow',
     compentency: 3,
-    category: ['Data Science', 'Machine Learning', 'Python'],
+    category: ['Data Science', 'Deep Learning', 'Python', 'Computer Vision'],
   },
   {
     title: 'Jupyter',
     compentency: 5,
-    category: ['Data Science', 'Machine Learning', 'Python'],
+    category: ['Data Science', 'Python'],
   },
   {
     title: 'HTML',
@@ -181,21 +201,6 @@ export const skills = [
     compentency: 4,
     category: ['Languages', 'Databases'],
 
-  },
-  {
-    title: 'Photoshop',
-    compentency: 3,
-    category: ['Design'],
-  },
-  {
-    title: 'Lightroom',
-    compentency: 3,
-    category: ['Design'],
-  },
-  {
-    title: 'Keras',
-    compentency: 4,
-    category: ['Machine Learning', 'Python'],
   },
   {
     title: 'Visualization',
