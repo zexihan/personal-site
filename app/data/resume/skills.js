@@ -107,7 +107,17 @@ export const skills = [
     category: ['Web Development', 'Databases'],
   },
   {
-    title: 'Realm',
+    title: 'Memcached',
+    compentency: 4,
+    category: ['Web Development', 'Databases'],
+  },
+  {
+    title: 'Zookeeper',
+    compentency: 4,
+    category: ['Web Development'],
+  },
+  {
+    title: 'Cassandra',
     compentency: 4,
     category: ['Web Development', 'Databases'],
   },
@@ -133,11 +143,6 @@ export const skills = [
   },
   {
     title: 'Flask',
-    compentency: 4,
-    category: ['Web Development', 'Frameworks', 'Python'],
-  },
-  {
-    title: 'Django',
     compentency: 4,
     category: ['Web Development', 'Frameworks', 'Python'],
   },
