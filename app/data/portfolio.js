@@ -7,7 +7,25 @@ const data = [
     image: "/images/portfolio/point_cloud.gif",
     date: "2020-06",
     desc:
-      "3D point cloud research for applications in cashierless store and more scenarios."
+      "Applied research and development of point cloud and 3D deep learning for cashierless store and more scenarios."
+  },
+  {
+    title: "labelImg-kitti Rotated Bounding Box Annotation Tool",
+    subtitle: "",
+    link: "https://github.com/zexihan/labelImg-kitti",
+    image: "/images/portfolio/labelImg-kitti.png",
+    date: "2020-04",
+    desc:
+      "Annotation tool for 3D point cloud object detection from bird's eye view."
+  },
+  {
+    title: "Point Cloud Annotator - Keypoint Annotation and Visualization",
+    subtitle: "",
+    link: "https://github.com/zexihan/point-cloud-annotator",
+    image: "/images/portfolio/point-cloud-annotator.png",
+    date: "2020-02",
+    desc:
+      "Web-based point cloud keypoint annotation and visualization tool."
   },
   {
     title: "TripElf – Map-based Web App",
