@@ -1,10 +1,21 @@
 
 const positions = [
   {
+    company: "Inceptio Technology",
+    position: "Software Engineer - LiDAR Perception",
+    link: "",
+    daterange: "October 2020 - Present",
+    points: [
+      "Responsible for the development of the real-time multi-task LiDAR perception deep learning algorithms for the L3/L4 autonomous driving trucks, including object detection, tracking, velocity estimation, freespace, and lane detection.",
+      "Deploy the model to SoC by optimizing the inference time-efficiency of the model from multiple perspectives.",
+      "Coordinate with other AD teams to push the L3 trucks to mass production in a limited time.",
+    ],
+  },
+  {
     company: "Suning Commerce R&D Center USA",
     position: "Software Engineer - 3D Deep Learning",
     link: "",
-    daterange: "August 2019 - Present",
+    daterange: "August 2019 - August 2020",
     points: [
       "Lead applied research of the state-of-the-art 3D (point cloud) deep learning algorithms in pedestrian detection and tracking for automated convenience stores.",
       "Develop large-scale 3D object detection datasets in an iterative and evolutive annotation process.",
