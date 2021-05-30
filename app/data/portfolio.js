@@ -1,6 +1,15 @@
 // TODO Add a couple lines about each project
 const data = [
   {
+    title: "LiDAR 3D Object Detection in Autonomous Driving",
+    subtitle: "",
+    link: "",
+    image: "/images/portfolio/lidar_detection.png",
+    date: "2021-05",
+    desc:
+      ""
+  },
+  {
     title: "Pedestrian Detection and Tracking with 3D Deep Learning on Point Cloud",
     subtitle: "",
     link: "",
